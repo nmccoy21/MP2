@@ -9,16 +9,22 @@ band_name = 'band_name'
 origin_country = 'origin'
 file_end_date = 2017
 metal_file_name = 'metal_bands_2017_MP2.csv'
-
+init_dict = {}
 def read_data(file_name):
     # open and read the file
     # we're setting the encoding here to utf-8 to avoid
     # decoding errors on Windows machines
     with open(file_name, 'r', encoding="utf-8-sig") as csvfile:
+        host_reader = csv.DictReader(csvfile)
+
+        for row in host_reader:
+            if 
+            read_list = [
         # read the data using a DictReader
         # use a list comprehension to create a new nested list from the data
         # each element will be a Dictionary (or Ordered Dictionary, depending on your version of Python)
         # representing a row from the csv file
+        
 
     # return the list for use in other functions
     # note: we are returning ALL of the data from the csv file here
